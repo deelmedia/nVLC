@@ -90,6 +90,12 @@ namespace Declarations.Players
         AspectRatioMode AspectRatio { get; set; }
 
         /// <summary>
+        /// Set custom aspect ratio.
+        /// </summary>
+        /// <param name="path">Aspect ratio string ("15:12", "1:15", etc)</param>
+        void SetCustomAspectRatio(string p_sAspectRatio);
+
+        /// <summary>
         /// Sets video subtitle file.
         /// </summary>
         /// <param name="path">Full path to the video subtitles.</param>

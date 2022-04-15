@@ -178,6 +178,11 @@ namespace Implementation.Players
             }
         }
 
+        public void SetCustomAspectRatio(string p_sAspectRatio)
+        {
+            LibVlcMethods.libvlc_video_set_aspect_ratio(m_hMediaPlayer, p_sAspectRatio.ToUtf8());
+        }
+
         public void SetSubtitleFile(string path)
         {
             LibVlcMethods.libvlc_video_set_subtitle_file(m_hMediaPlayer, path.ToUtf8());
